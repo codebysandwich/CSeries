@@ -6,12 +6,33 @@
 //
 
 #include <iostream>
+#include <string>
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "hello, world!" << std::endl;
-    for (int i = 0; i<10; i++) {
-        std::cout << i*12 << std::endl;
+    string user_name;
+    cout << "please enter your name: ";
+    cin >> user_name;
+    cout << "hello "
+         << user_name
+         << " welcome!" << endl;
+    
+    cout << endl
+         << "please enter you numbers to Sum(split with space): ";
+    
+    int sum = 0;
+    int i = 0;
+    while (cin >> i) {
+        sum += i;
+        if (cin.peek() == ' ') {
+            cin.get();
+        }
+        if (cin.peek() =='\n') {
+            break;
+        }
     }
+    cout << "your numbers sum is: " << sum << endl;
     return 0;
 }
