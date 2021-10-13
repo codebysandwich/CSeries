@@ -3,6 +3,7 @@
 //  Foundation
 //
 //  Created by 蔡志明 on 2021/10/9.
+//  演示C++基础语法
 //
 
 #include <iostream>
@@ -22,8 +23,9 @@ int main(int argc, const char * argv[]) {
     cout << endl
          << "please enter you numbers to Sum(split with space): ";
     
-    int sum = 0;
-    int i = 0;
+    // 构造函数语法
+    int sum(0);
+    int i;
     while (cin >> i) {
         sum += i;
         if (cin.peek() == ' ') {
@@ -34,6 +36,7 @@ int main(int argc, const char * argv[]) {
         }
     }
     cout << "your numbers sum is: " << sum << endl;
+    
     
     return 0;
 }
