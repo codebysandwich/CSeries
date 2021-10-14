@@ -8,6 +8,8 @@
 
 #include <iostream>
 #include <string>
+#include "header/math.h"
+#include "header/cmath.h"
 
 using namespace std;
 
@@ -37,6 +39,14 @@ int main(int argc, const char * argv[]) {
     }
     cout << "your numbers sum is: " << sum << endl;
     
+    // 演示头文件及导入，演示命名空间使用
+    cout << "math: "
+         << Multify(3, 4)
+         << "  cmath: "
+         << cm::Mean(3, 6)
+         << "  cmath: "
+         << cm::Multify(2, 3)
+         << endl;
     
     return 0;
 }
