@@ -10,6 +10,7 @@
 #include "header/math.h"
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 // Function Prototype

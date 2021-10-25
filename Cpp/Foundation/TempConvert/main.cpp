@@ -14,15 +14,13 @@ double Cel2Fah(double celsius);
 /*
  主程序入口
  */
-int main() {
+int main()
+{
     double celsius;
     cout << "Please enter a celsius value: ";
     cin >> celsius;
-    cout << celsius << " degrees Celsius is "
-         << Cel2Fah(celsius) << " degrees Fahrenheit."
-         << endl;
+    cout << celsius << " degrees Celsius is " << Cel2Fah(celsius)
+         << " degrees Fahrenheit." << endl;
 }
 
-double Cel2Fah(double celsius) {
-    return celsius * 1.8 + 32.0;
-}
+double Cel2Fah(double celsius) { return celsius * 1.8 + 32.0; }
