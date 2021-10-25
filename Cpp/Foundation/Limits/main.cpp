@@ -9,6 +9,7 @@
 #include <climits>
 
 using namespace std;
+
 int main() {
     int max_int = INT_MAX;
     short max_short = SHRT_MAX;
