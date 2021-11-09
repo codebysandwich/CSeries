@@ -13,8 +13,11 @@
 
 using namespace std;
 
+const int MONTHS = 12;
+
 // Function Prototype
 double stonetolib(double stone);
+int GetMonths(int years);
 
 int main(int argc, const char *argv[])
 {
@@ -48,10 +51,16 @@ int main(int argc, const char *argv[])
     double sts;
     cin >> sts;
     cout << sts << " stone = " << stonetolib(sts) << " pounds" << endl;
+    
+    cout << "test const type: " << GetMonths(3) << endl;
 
     return 0;
 }
 
 double stonetolib(double stone) {
     return 14 * stone;
+}
+
+int GetMonths(int years) {
+    return MONTHS * years;
 }
